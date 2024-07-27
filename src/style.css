@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+.app_main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}
+
+.app_inner-container{
+    max-width: 1140px;
+    width: 100%;
+}
+
+.app_nav{
+    margin-top: 24px;
+    padding: 20px 32px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-box-shadow: -7px 16px 27px -22px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 16px 27px -22px rgba(0,0,0,0.75);
+    box-shadow: -7px 16px 27px -22px rgba(0,0,0,0.75);;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app_nav-logo img{
+    width: 180px;
+}
+
+.app_nav-links{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.app_nav-links-item{
+    font-size: 18px;
+    font-weight: 800;
+    color: #343a40;
+}
+
+.app_nav-links-item select{
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #343a40;
+}
+
+.app_nav-button{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #28cb98;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.app_nav-bar{
+    display: none;  
+}
+
+@media  screen and (max-width: 1140px) {
+    .app_nav-links{
+        gap: 20px;
+    }
+
+    .app_nav-links-item{
+        font-size: 14px;
+    }
+
+    .app_nav-links-item select{
+        font-size: 14px;
+    }
+
+    .app_nav-button{
+        font-size: 12px;
+    }
+}
+
+@media  screen and (max-width: 990px) {
+    .app_nav-logo img{
+        width: 100px;
+    }
+
+    .app_nav-links{
+        display: none;
+    }
+
+    .app_nav-button{
+        display: none;
+    }
+
+    .app_nav-bar{
+        display: flex;
+        align-items: center;
+            justify-content: center;
+            background: transparent;
+            font-size: 20px;
+            border: none;
+            outline: none;
+    }
+}
